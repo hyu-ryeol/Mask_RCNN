@@ -48,11 +48,9 @@ https://developer.nvidia.com/cuda-10.2-download-archive?target_os=Linux&target_a
    
   run파일 이름을보면 cuda_10.2.89_440.33.01_linux.run 라고 되있는데 내 그래픽카드 버전은 440.** 이므로 일치하는 것을 확인할 수 있음.  
 ```bash
-wget http://developer.download.nvidia.com/compute/cuda/10.2/Prod/local_installers/cuda_10.2.89_440.33.01_linux.run 
-        
+wget http://developer.download.nvidia.com/compute/cuda/10.2/Prod/local_installers/cuda_10.2.89_440.33.01_linux.run    
 ```
-
-         
+여기까지 하면 run파일 설치가 된 것임.            
 
   run파일을 인스톨 하기 전 충돌 가능성 때문에 gui를 사용하지 않는 모드로 들어가야함   
    ctrl+alt+f1를 눌러 root로 로그인
@@ -126,4 +124,4 @@ nvidia-smi
 ```bash
 pip install torch torchvision
 ```
-라고 치면 최신 버전의 Pythoch가 설치되는데 CUDA  
+라고 치면 최신 버전의 Pythoch가 설치되는데 설치된 CUDA
