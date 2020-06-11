@@ -1,7 +1,7 @@
 # Mask_RCNN
 Ubuntu 18.04LTS, Geforce RTX2060 super 기준
 
-**그래픽드라이버가 깔려있는 경우 제거**
+**1.그래픽드라이버가 깔려있는 경우 제거**
 
 터미털창에 다음과 같이 친다
 ```bash
@@ -26,7 +26,7 @@ sudo update-initramfs -u
 sudo reboot
 ```
 
-**CUDA 설치**
+**2.CUDA 설치**
 
     https://www.nvidia.co.kr/Download/index.aspx?lang=kr    
 에서 자신의 그래픽카드에 맞는 nvidia 그래픽 드라이버 버전을 확인
