@@ -25,7 +25,8 @@ echo options nouveau modeset=0 | sudo tee -a /etc/modprobe.d/nouveau-kms.conf
 sudo update-initramfs -u
 sudo reboot
 ```
-
+   
+      
 **2.CUDA 설치**
 ```bash
 https://www.nvidia.co.kr/Download/index.aspx?lang=kr   
@@ -119,9 +120,11 @@ nvidia-smi
 +-----------------------------------------------------------------------------+
 ``` 
 와 같이 나옴 여기까지 잘 나왔으면 CUDA 설치는 끝
-
+   
+      
+      
 **3.Pytorch 설치**
 ```bash
 pip install torch torchvision
 ```
-라고 치면 최신 버전의 Pythoch가 설치되는데 설치된 CUDA
+라고 치면 최신 버전의 Pythoch가 설치되는데 설치된 CUDA버전과 안맞을수 있으므로 주의
