@@ -39,7 +39,7 @@ sudo reboot
 
 
 **설치순서 내 그래픽 드라이버 기준**
-위의 링크에 들어가서 Linux-x86_64-Ubuntu-18.04-runfile(Local) 순서로 클릭하면
+ 위의 링크에 들어가서 Linux-x86_64-Ubuntu-18.04-runfile(Local) 순서로 클릭하면
 ```bash
     wget http://developer.download.nvidia.com/compute/cuda/10.2/Prod/local_installers/cuda_10.2.89_440.33.01_linux.run 
         (런파일 다운로드. 내경우 home/baek 경로)
