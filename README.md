@@ -25,7 +25,7 @@ echo options nouveau modeset=0 | sudo tee -a /etc/modprobe.d/nouveau-kms.conf
 sudo update-initramfs -u
 sudo reboot
 ```
-'   
+.   
       
    
 **2.CUDA 설치**
@@ -122,6 +122,7 @@ nvidia-smi
 ``` 
 와 같이 나옴 여기까지 잘 나왔으면 CUDA 설치는 끝
    
+.      
       
       
 **3.Pytorch 설치**
