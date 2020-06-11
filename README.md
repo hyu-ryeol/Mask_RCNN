@@ -140,9 +140,9 @@ pip3 install -r requirements/build.txt
 pip3 install "git+https://github.com/open-mmlab/cocoapi.git#subdirectory=pycocotools"
 pip3 install -v -e .
 ```
-설치가 됬으면 다음 링크를 주소창에 쳐서 test 파일을 받는다
+설치가 됬으면 다음 링크를 주소창에 쳐서 test 파일을 받는다  (~/mmdetection 경로에 설치할것)
 ```bash
-https://open-mmlab.s3.ap-northeast-2.amazonaws.com/mmdetection/v2.0/mask_rcnn/mask_rcnn_x101_64x4d_fpn_1x_coco/mask_rcnn_x101_64x4d_fpn_1x_coco_20200201-9352eb0d.pth       (~/mmdetection 경로에 설치할것)
+https://open-mmlab.s3.ap-northeast-2.amazonaws.com/mmdetection/v2.0/mask_rcnn/mask_rcnn_x101_64x4d_fpn_1x_coco/mask_rcnn_x101_64x4d_fpn_1x_coco_20200201-9352eb0d.pth      
 ```
  파일을 받았으면 다음을 터미널 창에 입력
 ```bash
