@@ -35,11 +35,11 @@ sudo reboot
   
     https://developer.nvidia.com/cuda-10.2-download-archive?target_os=Linux&target_arch=x86_64&target_distro=Ubuntu&target_version=1804&target_type=runfilelocal 
 에서 CUDA 설치
-참고로 CUDA Toolkit을 설치하면 자동으로 그래픽드라이버도 설치하는데 과정은 아래와 같음.
+참고로 CUDA Toolkit을 설치하면 자동으로 그래픽드라이버도 설치하는데 과정은 아래와 같음.    
 
 
-**설치순서 내 그래픽 드라이버 기준**
- 위의 링크에 들어가서 Linux-x86_64-Ubuntu-18.04-runfile(Local) 순서로 클릭하면
+**설치순서 내 그래픽 드라이버 기준**     
+ 위의 링크에 들어가서 Linux-x86_64-Ubuntu-18.04-runfile(Local) 순서로 클릭하면     
 ```bash
     wget http://developer.download.nvidia.com/compute/cuda/10.2/Prod/local_installers/cuda_10.2.89_440.33.01_linux.run 
         (런파일 다운로드. 내경우 home/baek 경로)
