@@ -3,7 +3,7 @@ Ubuntu 18.04LTS, Geforce RTX2060 super 기준
 
 **그래픽드라이버가 깔려있는 경우 제거**
 
----터미털창에 다음과 같이 친다---
+터미털창에 다음과 같이 친다
 
     sudo apt-get remove nvidia* && sudo apt autoremove
     sudo apt-get install dkms build-essential linux-headers-generic
@@ -11,12 +11,13 @@ Ubuntu 18.04LTS, Geforce RTX2060 super 기준
 
 
 ---실행된 blacklist.conf 파일 맨 밑에 추가한다---
+'''bash
 blacklist nouveau
 blacklist lbm-nouveau
 options nouveau modeset=0
 alias nouveau off
 alias lbm-nouveau off
- 
+'''
 
 ---다시 터미널창에 다음과 같이 친다---
 echo options nouveau modeset=0 | sudo tee -a /etc/modprobe.d/nouveau-kms.conf
