@@ -6,9 +6,11 @@ Ubuntu 18.04LTS, Geforce RTX2060 super 기준
 ---터미털창에 다음과 같이 친다---
 
 '''
+
             sudo apt-get remove nvidia* && sudo apt autoremove
             sudo apt-get install dkms build-essential linux-headers-generic
             sudo gedit /etc/modprobe.d/blacklist.conf
+            
 '''
 
 ---실행된 blacklist.conf 파일 맨 밑에 추가한다---
