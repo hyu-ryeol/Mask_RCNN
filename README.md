@@ -127,6 +127,6 @@ nvidia-smi
       
 # 3.Pytorch 설치
 ```bash
-pip install torch torchvision
+pip3 install torch torchvision
 ```
 라고 치면 최신 버전의 Pythoch가 설치되는데 설치된 CUDA버전과 안맞을수 있으므로 주의
