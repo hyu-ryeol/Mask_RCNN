@@ -19,7 +19,7 @@ alias nouveau off
 alias lbm-nouveau off
 ```
 
----다시 터미널창에 다음과 같이 친다---
+다시 터미널창에 다음과 같이 친다
 ```bash
 echo options nouveau modeset=0 | sudo tee -a /etc/modprobe.d/nouveau-kms.conf
 sudo update-initramfs -u
@@ -39,11 +39,11 @@ sudo reboot
 
 
     
-방금 위의 링크에 들어가서 Linux-x86_64-Ubuntu-18.04-runfile(Local) 순서로 클릭하고 런파일 다운로드. (내경우 home/baek 경로)
+방금 위의 링크에 들어가서 Linux-x86_64-Ubuntu-18.04-runfile(Local) 순서로 클릭하고 런파일 다운로드.  (내경우 home/baek 경로)   
 !본인의 그래픽 드라이버 버전에 맞는 CUDA를 설치해야함!    
   run파일 이름을보면 cuda_10.2.89_440.33.01_linux.run 라고 되있는데 내 그래픽카드 버전은 440.** 이므로 일치하는 것을 확인할 수 있음.  
 ```bash
-    wget http://developer.download.nvidia.com/compute/cuda/10.2/Prod/local_installers/cuda_10.2.89_440.33.01_linux.run 
+wget http://developer.download.nvidia.com/compute/cuda/10.2/Prod/local_installers/cuda_10.2.89_440.33.01_linux.run 
         
 ```
 
@@ -52,11 +52,11 @@ sudo reboot
   run파일을 인스톨 하기 전 충돌 가능성 때문에 gui를 사용하지 않는 모드로 들어가야함   
    ctrl+alt+f1를 눌러 root로 로그인
    
- 
-       sudo service lightdm stop
-       cd /home/baek
-       ./cuda_cuda_10.2.89_440.33.01_linux.run      (아까받은 런파일 실행)
- 
+```bash 
+sudo service lightdm stop
+cd /home/baek
+./cuda_cuda_10.2.89_440.33.01_linux.run      (아까받은 런파일 실행)
+ ```
  
  
  까지 입력하면 약관에 동의하냐고 물어보는데  accept 입력   
@@ -64,17 +64,19 @@ sudo reboot
  
  그리고 bashrc에 path를 입력하기 위해   
  
- 
-     gedit ~/.bashrc  
- 
+ ```bash
+gedit ~/.bashrc  
+ ```
  맨밑에 다음과같이 입력
+ ```bash
      export PATH=$PATH:/usr/local/cuda-10.2/bin
      export CUDADIR=/usr/local/cuda-10.2
      export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/usr/local/cuda-10.2/lib64
+ ```
  저장하고 종료
- 
+ ```bash
      source ~/.bashrc 
- 
+ ```
  
 
  
