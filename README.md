@@ -1,7 +1,7 @@
 # Mask_RCNN
 Ubuntu 18.04LTS, Geforce RTX2060 super 기준
 
-**1.그래픽드라이버가 깔려있는 경우 제거**
+# 1.그래픽드라이버가 깔려있는 경우 제거
 
 터미털창에 다음과 같이 친다
 ```bash
@@ -28,7 +28,7 @@ sudo reboot
 .   
       
    
-**2.CUDA 설치**
+# 2.CUDA 설치
 ```bash
 https://www.nvidia.co.kr/Download/index.aspx?lang=kr   
 ```
@@ -125,7 +125,7 @@ nvidia-smi
 .      
       
       
-**3.Pytorch 설치**
+# 3.Pytorch 설치
 ```bash
 pip install torch torchvision
 ```
