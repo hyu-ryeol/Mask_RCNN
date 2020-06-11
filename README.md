@@ -69,15 +69,50 @@ gedit ~/.bashrc
  ```
  맨밑에 다음과같이 입력
  ```bash
-     export PATH=$PATH:/usr/local/cuda-10.2/bin
-     export CUDADIR=/usr/local/cuda-10.2
-     export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/usr/local/cuda-10.2/lib64
+ export PATH=$PATH:/usr/local/cuda-10.2/bin
+ export CUDADIR=/usr/local/cuda-10.2
+ export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/usr/local/cuda-10.2/lib64
  ```
  저장하고 종료
  ```bash
-     source ~/.bashrc 
+ source ~/.bashrc 
  ```
  
+잘 깔렸나 확인하려면
+```bash
+nvcc --version
+```
 
- 
- 
+나의경우 다음과 같이 나옴
+```bash
+nvcc: NVIDIA (R) Cuda compiler driver   
+Copyright (c) 2005-2019 NVIDIA Corporation   
+Built on Wed_Oct_23_19:24:38_PDT_2019
+Cuda compilation tools, release 10.2, V10.2.89
+```
+한번더 확인
+```bash
+nvidia-smi
+```
+```bash
++-----------------------------------------------------------------------------+
+| NVIDIA-SMI 440.33.01    Driver Version: 440.33.01    CUDA Version: 10.2     |
+|-------------------------------+----------------------+----------------------+
+| GPU  Name        Persistence-M| Bus-Id        Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp  Perf  Pwr:Usage/Cap|         Memory-Usage | GPU-Util  Compute M. |
+|===============================+======================+======================|
+|   0  GeForce RTX 206...  Off  | 00000000:01:00.0  On |                  N/A |
+|  0%   42C    P8    26W / 175W |    581MiB /  7981MiB |      3%      Default |
++-------------------------------+----------------------+----------------------+
+                                                                               
++-----------------------------------------------------------------------------+
+| Processes:                                                       GPU Memory |
+|  GPU       PID   Type   Process name                             Usage      |
+|=============================================================================|
+|    0       982      G   /usr/lib/xorg/Xorg                           316MiB |
+|    0      1480      G   /usr/bin/gnome-shell                         118MiB |
+|    0      1828      G   ...uest-channel-token=14735763422157492894    58MiB |
+|    0      9166      G   ...uest-channel-token=10181041133129984811    85MiB |
++-----------------------------------------------------------------------------+
+``` 
+와 같이 나옴
