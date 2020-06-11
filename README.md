@@ -130,3 +130,13 @@ nvidia-smi
 pip3 install torch torchvision
 ```
 라고 치면 python3에 최신버전의 Pythoch가 설치되는데 설치된 CUDA버전과 안맞을수 있으므로 주의
+
+# 4. mm_detection 설치
+```bash
+git clone https://github.com/open-mmlab/mmdetection.git
+cd mmdetection
+python3 setup.py develop
+pip3 install -r requirements/build.txt
+pip3 install "git+https://github.com/open-mmlab/cocoapi.git#subdirectory=pycocotools"
+pip3 install -v -e .
+```
