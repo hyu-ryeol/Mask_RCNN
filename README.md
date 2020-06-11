@@ -27,6 +27,7 @@ sudo reboot
 ```
    
       
+   
 **2.CUDA 설치**
 ```bash
 https://www.nvidia.co.kr/Download/index.aspx?lang=kr   
