@@ -1,5 +1,5 @@
 # Mask_RCNN
-Ubuntu 18.04LTS, Geforce RTX2060 super 기준
+Ubuntu 18.04LTS, Geforce RTX2060 super, Azure Kinect 기준
 
 # 1.그래픽드라이버가 깔려있는 경우 제거
 
@@ -145,3 +145,4 @@ pip3 install -v -e .
 https://open-mmlab.s3.ap-northeast-2.amazonaws.com/mmdetection/v2.0/mask_rcnn/mask_rcnn_x101_64x4d_fpn_1x_coco/mask_rcnn_x101_64x4d_fpn_1x_coco_20200201-9352eb0d.pth      (~/mmdetection 경로에 설치할것)
 python3 demo/webcam_demo.py configs/mask_rcnn/mask_rcnn_x101_64x4d_fpn_1x_coco.py mask_rcnn_x101_64x4d_fpn_1x_coco_20200201-9352eb0d.pth
 ```
+다음까지 완료되면 카메라 화면이 나오는데 그러면 성공 한 것이다
